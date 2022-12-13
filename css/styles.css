@@ -1,30 +1,44 @@
 /*********************Tags*********************/
 
 body {
-    background-color: #EFF5F5;
-}
+    font-family: 'Montserrat', sans-serif;
+    background-color: BLACK;
+    margin: 0;
+    }
 
 hr {
-    border: 5px dotted;
-    border-style: dotted none none none;
-    color: #D6E4E5;
+    border: 5px line;
+    border-style: solid none none none;
+    color: #393E46;
     height: 1px;
-    width: 10%;
+    width: 100%;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #497174;
+    color: #393E46;
 }
 
 h1 {
-    color: #EB6440;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.11em;
+    color: #c5c5c5;
+    font-size: 50px;
+    margin-top: 0;
 }
 
 h3 {
-    color: #EB6440;
+    color: #c5c5c5;
+    font-size: 25px;
+}
+
+h4 {
+    columns: #c5c5c5;
+    font-size: 18px;
+}
+
+
+h5 {
+    color: #c5c5c5;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 td {
@@ -40,10 +54,52 @@ th {
 a {
     color: #EB6440;
     letter-spacing: 0.05em;
+    font-weight: medium;
 }
 
 
+
 /*********************Classes*********************/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin: 0;
+    border-bottom: 1px solid grey;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 10vw;
+    left: 28%
+}
+
+.fa {
+    font-size: 30px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
 .contact {
     color: red;
 }
@@ -52,9 +108,56 @@ a {
     color: blue;
 }
 
-
-/*********************Classes*********************/
-/* Used for one-off instances */
-#heading {
-    color: purple;
+.wrapper {
+    padding: 5vw 10vw 0 10vw;
+    margin: 0 0 10% 0;
 }
+
+.container {
+    display: table;
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+}
+
+.spacer {
+    height: 50px;
+}
+
+.row {
+    display: table-row;
+    width: 100%;
+    border-bottom: 1px solid #393E46;
+}
+
+.date {
+    display: table-cell;
+}
+
+.company {
+    display: table-cell;
+    padding-right: 50px;
+}
+
+.description {
+    display: table-cell;
+    padding-left: 50px;
+}
+
+.grow {
+    display: table-row;
+    border-radius: 10px;
+    border-bottom: 1px solid #393E46;
+    height: 100%;
+    width: 100%;
+    margin: 5px 1% 5px 1%;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: left;
+    overflow: hidden;
+  }
+  .grow:hover {
+    height: 200px;
+  }
+
